@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #E0FFFF;
+  }
+  
+  header {
+    background-color: #add8e6;
+    color: black;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 20px;
+    padding: 20px;
+  }

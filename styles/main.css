@@ -1,0 +1,37 @@
+#fishList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+.fish {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.fish_image {
+    max-width: 100px;
+}
+
+#tipList {
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+#tips-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+#locationList {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+.location {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
