@@ -1,46 +1,23 @@
-import { fishList } from './fishList.js'
+import { fishList, mostHolyFish, soldierFish, regularFish } from './fishList.js'
 import { tipList } from './tipList.js'
 import { locationList } from './locationList.js'
+import { renderFishListToDOM, renderTipListToDOM, renderLocationListToDOM } from './renderHTML.js'
  
-// Generate the fish list
-const fishHTML = fishList()
+// //Generate and render the fish list
+// const fishListHTML = fishList()
+// renderFishListToDOM(fishListHTML)
 
-// Generate the care tips
+// Generate and render the filtered fish list
+const holyFishHTML = fishList(mostHolyFish())
+const soldierFishHTML = fishList(soldierFish())
+const regularFishHTML = fishList(regularFish())
+
+renderFishListToDOM((holyFishHTML), soldierFishHTML, regularFishHTML)
+
+// Generate and render the care tips
 const tipHTML = tipList()
-
-// Generate the location list
-const locationHTML = locationList()
-
-// Render each HTML string to the correct DOM element
-const renderFishListToDOM = (fishHTML) => {
-    const fishList = document.getElementById('fishList')
-
-    if (fishList) {
-        fishList.innerHTML = fishHTML
-    } else {
-        console.error('"Could not find element with id "fishList"')
-    }
-}
-renderFishListToDOM(fishHTML)
-
-const renderTipListToDOM = (tipHTML) => {
-    const tipList = document.getElementById('tipList')
-
-    if (tipList) {
-        tipList.innerHTML = tipHTML
-    } else {
-        console.error('"Could not find element with id "tipList"')
-    }
-}
 renderTipListToDOM(tipHTML)
 
-const renderLocationListToDOM = (locationHTML) => {
-    const locationList = document.getElementById('locationList')
-
-    if (locationList) {
-        locationList.innerHTML = locationHTML
-    } else {
-        console.error('"Could not find element with id "locationList"')
-    }
-}
+// Generate and render the location list
+const locationHTML = locationList()
 renderLocationListToDOM(locationHTML)

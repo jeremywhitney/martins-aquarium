@@ -56,6 +56,87 @@ export const database = {
             diet: "Carnivore",
             image: "./images/anchor.webp"
         },
+        {
+            name: "Marlin",
+            species: "Striped Marlin",
+            length: 120,
+            location: "Pacific Ocean",
+            diet: "Carnivore",
+            image: "./images/marlin.jpeg"
+        },
+        {
+            name: "Dolphin",
+            species: "Common Dolphin",
+            length: 84,
+            location: "Worldwide",
+            diet: "Carnivore",
+            image: "./images/dolphin.jpeg"
+        },
+        {
+            name: "Squirt",
+            species: "Squid",
+            length: 10,
+            location: "Ocean",
+            diet: "Carnivore",
+            image: "./images/squirt.jpeg"
+        },
+        {
+            name: "Pearl",
+            species: "Pearl Gourami",
+            length: 4,
+            location: "Southeast Asia",
+            diet: "Omnivore",
+            image: "./images/pearl.webp"
+        },
+        {
+            name: "Clowny",
+            species: "Clown Triggerfish",
+            length: 18,
+            location: "Indian Ocean",
+            diet: "Carnivore",
+            image: "./images/clowny.png"
+        },
+        {
+            name: "Barracuda",
+            species: "Great Barracuda",
+            length: 72,
+            location: "Tropical Seas",
+            diet: "Carnivore",
+            image: "./images/barracuda.jpeg"
+        },
+        {
+            name: "Jelly",
+            species: "Jellyfish",
+            length: 15,
+            location: "Worldwide",
+            diet: "Carnivore",
+            image: "./images/jelly.jpeg"
+        },
+        {
+            name: "Guppy",
+            species: "Millionfish",
+            length: 2,
+            location: "South America",
+            diet: "Omnivore",
+            image: "./images/guppy.jpeg"
+        },
+        {
+            name: "Esteban",
+            species: "Jaguar Shark",
+            length: 180,
+            location: "Unknown",
+            diet: "Carnivore",
+            image: "./images/esteban.webp"
+        },
+        {
+            name: "Angelfish",
+            species: "French Angelfish",
+            length: 15,
+            location: "Caribbean Sea",
+            diet: "Omnivore",
+            image: "./images/angelfish.webp"
+        }
+        
     ],
     tips: [
         {
