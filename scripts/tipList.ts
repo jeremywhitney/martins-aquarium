@@ -1,6 +1,6 @@
-import { database } from "./fishData.js"
+import { database } from "./fishData"
 
-export const tipList = () => {
+export const tipList = (): string => {
     let tipHTML = ""
 
     for (const tips of database.tips) {

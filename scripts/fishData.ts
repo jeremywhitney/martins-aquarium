@@ -1,4 +1,4 @@
-import { Fish, Location, Tip } from "./types";
+import { Diet, Fish, Location, Tip } from "./types";
 
 const fish: Fish[] = [
   {
@@ -6,7 +6,7 @@ const fish: Fish[] = [
     species: "Clownfish",
     length: 3,
     location: "Great Barrier Reef",
-    diet: "Omnivore",
+    diet: Diet.Omnivore,
     image: "./images/nemo.webp",
   },
   {
@@ -14,7 +14,7 @@ const fish: Fish[] = [
     species: "Blue Tang",
     length: 5,
     location: "Great Barrier Reef",
-    diet: "Omnivore",
+    diet: Diet.Omnivore,
     image: "./images/dory.webp",
   },
   {
@@ -22,7 +22,7 @@ const fish: Fish[] = [
     species: "Moorish Idol",
     length: 8,
     location: "Indian & Pacific Oceans",
-    diet: "Omnivore",
+    diet: Diet.Omnivore,
     image: "./images/gill.webp",
   },
   {
@@ -30,7 +30,7 @@ const fish: Fish[] = [
     species: "Porcupine pufferfish",
     length: 20,
     location: "Great Barrier Reef",
-    diet: "Omnivore",
+    diet: Diet.Omnivore,
     image: "./images/bloat.webp",
   },
   {
@@ -38,7 +38,7 @@ const fish: Fish[] = [
     species: "Seahorse",
     length: 6,
     location: "Great Barrier Reef",
-    diet: "Crustaceans",
+    diet: Diet.Crustaceans,
     image: "./images/sheldon.webp",
   },
   {
@@ -46,7 +46,7 @@ const fish: Fish[] = [
     species: "Yellow Tang",
     length: 8,
     location: "Great Barrier Reef",
-    diet: "Omnivore",
+    diet: Diet.Omnivore,
     image: "./images/bubbles.webp",
   },
   {
@@ -54,7 +54,7 @@ const fish: Fish[] = [
     species: "Hammerhead Shark",
     length: 144,
     location: "Worldwide",
-    diet: "Carnivore",
+    diet: Diet.Carnivore,
     image: "./images/anchor.webp",
   },
   {
@@ -62,7 +62,7 @@ const fish: Fish[] = [
     species: "Striped Marlin",
     length: 120,
     location: "Pacific Ocean",
-    diet: "Carnivore",
+    diet: Diet.Carnivore,
     image: "./images/marlin.jpeg",
   },
   {
@@ -70,7 +70,7 @@ const fish: Fish[] = [
     species: "Common Dolphin",
     length: 84,
     location: "Worldwide",
-    diet: "Carnivore",
+    diet: Diet.Carnivore,
     image: "./images/dolphin.jpeg",
   },
   {
@@ -78,7 +78,7 @@ const fish: Fish[] = [
     species: "Squid",
     length: 10,
     location: "Ocean",
-    diet: "Carnivore",
+    diet: Diet.Carnivore,
     image: "./images/squirt.jpeg",
   },
   {
@@ -86,7 +86,7 @@ const fish: Fish[] = [
     species: "Pearl Gourami",
     length: 4,
     location: "Southeast Asia",
-    diet: "Omnivore",
+    diet: Diet.Omnivore,
     image: "./images/pearl.webp",
   },
   {
@@ -94,7 +94,7 @@ const fish: Fish[] = [
     species: "Clown Triggerfish",
     length: 18,
     location: "Indian Ocean",
-    diet: "Carnivore",
+    diet: Diet.Carnivore,
     image: "./images/clowny.png",
   },
   {
@@ -102,7 +102,7 @@ const fish: Fish[] = [
     species: "Great Barracuda",
     length: 72,
     location: "Tropical Seas",
-    diet: "Carnivore",
+    diet: Diet.Carnivore,
     image: "./images/barracuda.jpeg",
   },
   {
@@ -110,7 +110,7 @@ const fish: Fish[] = [
     species: "Jellyfish",
     length: 15,
     location: "Worldwide",
-    diet: "Carnivore",
+    diet: Diet.Carnivore,
     image: "./images/jelly.jpeg",
   },
   {
@@ -118,7 +118,7 @@ const fish: Fish[] = [
     species: "Millionfish",
     length: 2,
     location: "South America",
-    diet: "Omnivore",
+    diet: Diet.Omnivore,
     image: "./images/guppy.jpeg",
   },
   {
@@ -126,7 +126,7 @@ const fish: Fish[] = [
     species: "Jaguar Shark",
     length: 180,
     location: "Unknown",
-    diet: "Carnivore",
+    diet: Diet.Carnivore,
     image: "./images/esteban.webp",
   },
   {
@@ -134,7 +134,7 @@ const fish: Fish[] = [
     species: "French Angelfish",
     length: 15,
     location: "Caribbean Sea",
-    diet: "Omnivore",
+    diet: Diet.Omnivore,
     image: "./images/angelfish.webp",
   },
 ];

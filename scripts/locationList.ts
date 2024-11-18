@@ -1,6 +1,6 @@
-import { database } from "./fishData.js"
+import { database } from "./fishData"
 
-export const locationList = () => {
+export const locationList = (): string => {
     let locationHTML = ""
 
     for (const location of database.locations) {
