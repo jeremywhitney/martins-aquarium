@@ -1,4 +1,4 @@
-import { database } from "./fishData";
+import { database } from "./fishData.js";
 export const fishList = (fishArray) => {
     let fishHTML = "";
     for (const fish of fishArray) {

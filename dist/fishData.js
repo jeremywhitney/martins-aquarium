@@ -1,4 +1,4 @@
-import { Diet } from "./types";
+import { Diet } from "./types.js";
 const fish = [
     {
         name: "Nemo",

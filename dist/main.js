@@ -1,7 +1,7 @@
-import { fishList, mostHolyFish, soldierFish, regularFish } from "./fishList";
-import { tipList } from "./tipList";
-import { locationList } from "./locationList";
-import { renderFishListToDOM, renderTipListToDOM, renderLocationListToDOM, } from "./renderHTML";
+import { fishList, mostHolyFish, soldierFish, regularFish } from "./fishList.js";
+import { tipList } from "./tipList.js";
+import { locationList } from "./locationList.js";
+import { renderFishListToDOM, renderTipListToDOM, renderLocationListToDOM, } from "./renderHTML.js";
 // //Generate and render the fish list
 // const fishListHTML = fishList()
 // renderFishListToDOM(fishListHTML)

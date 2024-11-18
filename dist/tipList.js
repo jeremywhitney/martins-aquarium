@@ -1,4 +1,4 @@
-import { database } from "./fishData";
+import { database } from "./fishData.js";
 export const tipList = () => {
     let tipHTML = "";
     for (const tips of database.tips) {
