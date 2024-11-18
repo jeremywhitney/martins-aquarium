@@ -1,10 +1,10 @@
-import { database } from "./fishData"
+import { database } from "./fishData";
 
 export const locationList = (): string => {
-    let locationHTML = ""
+  let locationHTML = "";
 
-    for (const location of database.locations) {
-        locationHTML += `
+  for (const location of database.locations) {
+    locationHTML += `
             <article class="locations">
                 <section class="location details">
                     <h2 class="location_name">Name: ${location.name}</h2>
@@ -12,9 +12,8 @@ export const locationList = (): string => {
                     <p class="location_description">Description: ${location.description}</p>
                 </section>
             </article>
-        `
-    }
+        `;
+  }
 
-return locationHTML
-    
-}
+  return locationHTML;
+};

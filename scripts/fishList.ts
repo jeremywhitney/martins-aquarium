@@ -1,10 +1,11 @@
-import { database } from './fishData.js'
+import { database } from "./fishData";
+import { Fish } from "./types.js";
 
-export const fishList = (fishArray) => {
-    let fishHTML = ""
+export const fishList = (fishArray: Fish[]): string => {
+  let fishHTML = "";
 
-    for (const fish of fishArray) {
-        fishHTML += `
+  for (const fish of fishArray) {
+    fishHTML += `
             <article class="fish">
                 <img src="${fish.image}" alt="${fish.name} image" class="fish_image">
                 <div class="fish_details">
@@ -15,40 +16,40 @@ export const fishList = (fishArray) => {
                     <p class="fish_diet">Diet: ${fish.diet}</p>
                 </div>
             </article>
-        `
+        `;
+  }
+  return fishHTML;
+};
+
+export const mostHolyFish = (): Fish[] => {
+  const holyFish: Fish[] = [];
+
+  for (const fish of database.fish) {
+    if (fish.length % 3 === 0) {
+      holyFish.push(fish);
     }
-    return fishHTML
-}
+  }
+  return holyFish;
+};
 
-export const mostHolyFish = () => {
-    const holyFish = []
+export const soldierFish = (): Fish[] => {
+  const soldierFish: Fish[] = [];
 
-    for (const fish of database.fish) {
-        if (fish.length % 3 === 0) {
-            holyFish.push(fish)
-        }
+  for (const fish of database.fish) {
+    if (fish.length % 5 === 0) {
+      soldierFish.push(fish);
     }
-    return holyFish
-}
+  }
+  return soldierFish;
+};
 
-export const soldierFish = () => {
-    const soldierFish = []
+export const regularFish = (): Fish[] => {
+  const regularFish: Fish[] = [];
 
-    for (const fish of database.fish) {
-        if (fish.length % 5 === 0) {
-            soldierFish.push(fish)
-        }
+  for (const fish of database.fish) {
+    if (fish.length % 3 !== 0 && fish.length % 5 !== 0) {
+      regularFish.push(fish);
     }
-    return soldierFish
-}
-
-export const regularFish = () => {
-    const regularFish = []
-
-    for (const fish of database.fish) {
-        if (fish.length % 3 !== 0 && fish.length % 5 !== 0) {
-            regularFish.push(fish)
-        }
-    }
-    return regularFish
-}
+  }
+  return regularFish;
+};
