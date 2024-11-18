@@ -20,7 +20,7 @@ renderFishListToDOM(holyFishHTML, soldierFishHTML, regularFishHTML);
 
 // Generate and render the care tips
 const tipHTML = tipList();
-renderTipListToDOM(tipHTML);
+renderTipListToDOM(tipHTML)
 
 // Generate and render the location list
 const locationHTML = locationList();
