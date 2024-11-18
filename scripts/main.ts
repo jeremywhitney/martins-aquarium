@@ -24,4 +24,4 @@ renderTipListToDOM(tipHTML);
 
 // Generate and render the location list
 const locationHTML = locationList();
-renderLocationListToDOM(locationHTML);
+renderLocationListToDOM(locationHTML)
