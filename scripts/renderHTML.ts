@@ -1,29 +1,29 @@
-export const renderFishListToDOM = (holyFishHTML, solderFishHTML, regularFishHTML) => {
-    const fishList = document.getElementById('fishList')
+export const renderFishListToDOM = (...fishHTML: string[]): void => {
+  const fishList = document.getElementById("fishList");
 
-    if (fishList) {
-        fishList.innerHTML = `${holyFishHTML}${solderFishHTML}${regularFishHTML}`
-    } else {
-        console.error('"Could not find element with id "fishList"')
-    }
-}
+  if (fishList) {
+    fishList.innerHTML = fishHTML.join("");
+  } else {
+    console.error('"Could not find element with id "fishList"');
+  }
+};
 
-export const renderTipListToDOM = (tipHTML) => {
-    const tipList = document.getElementById('tipList')
+export const renderTipListToDOM = (tipHTML: string): void => {
+  const tipList = document.getElementById("tipList");
 
-    if (tipList) {
-        tipList.innerHTML = tipHTML
-    } else {
-        console.error('"Could not find element with id "tipList"')
-    }
-}
+  if (tipList) {
+    tipList.innerHTML = tipHTML;
+  } else {
+    console.error('"Could not find element with id "tipList"');
+  }
+};
 
-export const renderLocationListToDOM = (locationHTML) => {
-    const locationList = document.getElementById('locationList')
+export const renderLocationListToDOM = (locationHTML: string): void => {
+  const locationList = document.getElementById("locationList");
 
-    if (locationList) {
-        locationList.innerHTML = locationHTML
-    } else {
-        console.error('"Could not find element with id "locationList"')
-    }
-}
+  if (locationList) {
+    locationList.innerHTML = locationHTML;
+  } else {
+    console.error('"Could not find element with id "locationList"');
+  }
+};
